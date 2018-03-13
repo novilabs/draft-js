@@ -53,6 +53,7 @@ const updateExistingBlock = (
       targetOffset,
     ),
     data: fragmentBlock.getData(),
+    type: text.length !== 0 ? targetBlock.getType() : fragmentBlock.getType(),
   });
 
   return contentState.merge({
